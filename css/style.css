@@ -1,0 +1,260 @@
+/*-----------MODIFICA A TODA LA WEB---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #222;
+    color: #e0e0e0;
+    max-width: 1520px;
+}
+h2{
+    margin: 50px;
+}
+/*-----------MODIFICANDO EL MENU---------*/
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+}
+/*-----------MODIFICANDO LA BARRA DE NAVEGACIÓN---------*/
+.navbar{
+    height: 15vh;
+    width: 80%;
+    margin-top: 30px;
+    background-color: rgba(49, 49, 49, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    position: absolute;
+    }
+.navbar-list{
+    list-style: none;
+    justify-content: end;
+}
+.navbar-items{
+    display: inline-block;
+    padding: 10px; 
+}
+.navbar-links{
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 16px; 
+    font-weight: 500;
+}
+/*----------LOGO DENTRO DEL NAV-----------*/
+.logo{
+    width: 5vw;
+    margin-left: 10px;
+    transition: all 0.3s;
+    justify-content: start;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+/************************INDEX***************************/
+
+/*--------MODIFICANDO EL MAIN-------*/
+main{
+   display: flex;
+   justify-content: center;
+}
+/*--------------NOTAS-------------*/
+.seccion-notas{
+    width: 65%;
+    display: inline-block;   
+}
+article{
+    display: inline-block;
+    margin: 3em 1em;
+    width: 45%;
+}
+.img-article{
+    width: 100%;
+}
+/*-------------ASIDE--------------*/
+.torneo-partido{
+    display: inline-block;
+    font-weight: 700;
+}
+.dia-partido{
+    display: inline-block;
+    margin-left: 1em;
+}
+.aside-conteiner{
+    width: 25%;
+    display: inline-block;
+    justify-content: end;
+}
+.partido-aside{
+    width: 100%;
+    border: 2px solid #555;
+    padding: 2em 1em;
+    font-size: 12px;
+}
+.estadio-partido{
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+.equipos-partido{
+    display: flexbox;
+    justify-content: center;
+}
+.img-aside{
+    width: 25%;
+}
+.sponsors{
+    width: 100%;
+
+}
+.img-sponsor{
+    width: 100%;
+}
+
+/************************LOCAL***************************/
+
+/*------------------MASCULINO/FEMENINO----------------*/
+.titulos{
+    margin-left: 20px;
+
+}
+.masculino{
+    display: inline-block;
+}
+.partido-local{
+    width: 75%;
+    padding: 2em 1em;
+    font-size: 24px;
+    display: inline-block;
+}
+.p-equipo-partido{
+    justify-content: space-between;
+
+}
+.num-fecha{
+    font-size: 50px;
+    justify-content: end;
+    align-self: start;
+}
+.tabla{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 80px 0;
+}
+.tabla_posiciones{
+    width:80vw;
+}
+.container-fecha{
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: rgba(49, 49, 49, 0.4);
+    border-radius: 15px;
+}
+.fecha-partido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-fecha{
+    width: 30%;
+}
+.p-fecha{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+.container-lista{
+    display: flex;
+    justify-content: space-around;
+
+}
+/*---------------REGIONAL-----------------*/
+.container-fase1{
+    margin: 50px 25px;
+}
+.tabla-fase1{
+    background-color: #555;
+    padding: 20px;
+}
+td{
+    padding: 10px;
+}
+th{
+    border-bottom: 1px solid #e0e0e0;
+}
+.td-osc{
+    background-color: #444;
+}
+.segunda-ronda{
+    margin: 50px 25px;
+}
+.fixture{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.img-fixture{
+    width: 80vw;
+}
+.partido-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+}
+.img-partido{
+    width: 150px;
+}
+.logo-fase{
+    width: 25px;
+}
+.container-equipo{
+    display: inline;
+    margin: 50px;
+}
+.img-equipo{
+    width: 50%;
+}
+
+.lista-equipo{
+    display: inline-block;
+    margin-left: 50px;
+}
+.divisiones{
+    width: 100vw;
+    margin: 0 auto;  
+}
+.img-pruebas{
+    width: 40%;
+}
+
+/*-------------FOOTER--------------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #dd5;
+
+}
+.footer-h5{
+    margin: 0 auto;
+    color: #222;
+    font-weight: 800;
+}
+.redes-items{
+    width: 50px;
+    justify-content: end;
+    margin-right: 10px;
+}
