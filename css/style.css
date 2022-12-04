@@ -8,7 +8,6 @@
 body{
     background: #222;
     color: #e0e0e0;
-    max-width: 1520px;
 }
 h2{
     margin: 50px;
@@ -41,7 +40,7 @@ h3{
     justify-content: space-between;
     z-index: 20;
     position: absolute;
-}
+    }
 .navbar-list{
     list-style: none;
     justify-content: end;
@@ -72,19 +71,55 @@ h3{
 main{
    display: flex;
    justify-content: center;
+   max-width: 1520px;
 }
 /*--------------NOTAS-------------*/
-.seccion-notas{
-    width: 65%;
-    display: inline-block;   
+.container-notas{
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
-article{
-    display: inline-block;
-    margin: 3em 1em;
-    width: 45%;
+.card{
+    background: #e0e0e0;
+    width: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    height: fit-content;
+}
+.card:hover{
+    background-color: rgb(255, 255, 0);
+    color: #222;
+    transform: scale(1.03);
+    transition: all 0.5s;
+}
+.card a{
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: rgb(255, 255, 0);
+    text-align: center;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-image{
+    background-color: #222;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+
 }
 .img-article{
     width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card p, h3{
+    font-size: 14px;
+    color: #222;
+    padding: 10px;
 }
 /*-------------ASIDE--------------*/
 .torneo-partido{
@@ -93,12 +128,13 @@ article{
 }
 .dia-partido{
     display: inline-block;
-    margin-left: 1em;
+    margin-left: 15px;
 }
 .aside-conteiner{
-    width: 25%;
+    width:20%;
     display: inline-block;
     justify-content: end;
+
 }
 .partido-aside{
     width: 100%;
@@ -124,7 +160,6 @@ article{
 .img-sponsor{
     width: 100%;
 }
-
 /************************LOCAL***************************/
 
 /*------------------MASCULINO/FEMENINO----------------*/
