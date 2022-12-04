@@ -41,7 +41,7 @@ h3{
     justify-content: space-between;
     z-index: 20;
     position: absolute;
-    }
+}
 .navbar-list{
     list-style: none;
     justify-content: end;
@@ -129,23 +129,33 @@ article{
 
 /*------------------MASCULINO/FEMENINO----------------*/
 .titulos{
-    margin-left: 20px;
+    text-align: center; /* yo centraría los títulos así */
 }
 .masculino{
-    display: inline-block;
+    width: 100%; /* para que ocupe todo el ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Esto para que queden el div con los textos, las imgs y los nombres de los clubes uno abajo del otro */
+    
 }
 .partido-local{
-    width: 75%;
-    padding: 2em 1em;
-    font-size: 24px;
-    display: inline-block;
-}
-.p-equipo-partido{
+    width: 80%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.p-equipos-partido{
+   display: inline-block;
+   margin-top: 1rem;
+   font-size: 1.5em;
 
 }
 .img-local{
-    width: 25%;
+    width: 8rem;
     filter: drop-shadow(2px 2px 4px #444);
 }
 .num-fecha{
