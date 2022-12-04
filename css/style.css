@@ -79,7 +79,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 .card{
     background: #e0e0e0;
@@ -94,16 +94,14 @@ main{
     transform: scale(1.03);
     transition: all 0.5s;
 }
-.card a{
+.boton{
     background-color: #222;
-    padding: 10px 15px;
+    padding: 10px 90px;
     border-radius: 8px;
     color: rgb(255, 255, 0);
     text-align: center;
-    display: block;
-    margin: 10px;
-    text-decoration: none;
     cursor: pointer;
+    margin: 10px 50px;
 }
 .card-image{
     background-color: #222;
@@ -121,30 +119,78 @@ main{
     color: #222;
     padding: 10px;
 }
+/*---------POPUP---------------*/
+.pop-up{
+    display: flex;
+    background-color: rgba(49, 49, 49, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: #222;
+    z-index: 200;
+}
+.mostrar{
+    pointer-events: auto;
+    opacity: 1;
+}
+.nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    width: 1200px;
+    height: 900px;
+    padding: 30px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 70px auto;
+}
+.nota img{
+    width: 40%;
+    float: left;
+    margin-right: 50px;
+}
+#cerrar{
+    float: right;
+    color: #222;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s;
+    font-size: 24px;
+}
+#cerrar:hover{
+    opacity: 1;
+    transform: scale(1.5);
+
+}
 /*-------------ASIDE--------------*/
-.torneo-partido{
-    display: inline-block;
-    font-weight: 700;
-}
-.dia-partido{
-    display: inline-block;
-    margin-left: 15px;
-}
 .aside-conteiner{
     width:20%;
     display: inline-block;
     justify-content: end;
-
 }
 .partido-aside{
+    display: block;
     width: 100%;
-    padding: 2em 1em;
     font-size: 12px;
-    box-shadow: 0px 0px 8px #444;
+    box-shadow: 0px 2px 5px #444;
+    margin: 5px 0;
+    padding: 10px 3px;
+}
+.torneo-partido{
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgb(255, 255, 0);
+    color: #222;
+    padding: 5px 3px;
 }
 .estadio-partido{
     font-weight: 400;
-    margin-bottom: 2em;
 }
 .equipos-partido{
     display: flexbox;
@@ -155,7 +201,6 @@ main{
 }
 .sponsors{
     width: 100%;
-
 }
 .img-sponsor{
     width: 100%;
@@ -167,34 +212,27 @@ main{
     text-align: center; /* yo centraría los títulos así */
 }
 .masculino{
-    width: 100%; /* para que ocupe todo el ancho de la pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Esto para que queden el div con los textos, las imgs y los nombres de los clubes uno abajo del otro */
-    
-}
-.partido-local{
     width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    
+    margin:0 auto;
 }
-
 .p-equipos-partido{
    display: inline-block;
-   margin-top: 1rem;
-   font-size: 1.5em;
-
+   margin-top: 10px;
+   font-size: 14px;
+}
+.equipos-partido , .p-equipos-partido{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    font-size: 24px;
 }
 .img-local{
-    width: 8rem;
+    width: 25%;
     filter: drop-shadow(2px 2px 4px #444);
 }
 .num-fecha{
     font-size: 50px;
+    display: flex;
     justify-content: end;
     align-self: start;
 }
@@ -230,7 +268,6 @@ main{
 .container-lista{
     display: flex;
     justify-content: space-around;
-
 }
 /*---------------REGIONAL-----------------*/
 .container-fase1{
