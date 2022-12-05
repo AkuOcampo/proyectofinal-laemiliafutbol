@@ -18,6 +18,9 @@ h3{
     font-size: 40px;
     color: #222;
 }
+button{
+    cursor: pointer;
+}
 /*-----------MODIFICANDO EL MENU---------*/
 .menu{
     position: relative;
@@ -252,6 +255,26 @@ main{
     background-color: rgba(49, 49, 49, 0.4);
     border-radius: 15px;
 }
+.fecha1{
+    position: relative;
+    z-index: 1;
+}
+.fecha2{
+    position: absolute;
+    opacity: 0;
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: rgba(49, 49, 49, 0.4);
+    border-radius: 15px;
+    z-index: 10;
+}
+.div-fecha2{
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 11;
+    
+}
 .fecha-partido{
     display: flex;
     justify-content: center;
@@ -268,6 +291,18 @@ main{
 .container-lista{
     display: flex;
     justify-content: space-around;
+}
+.container-boton-fecha{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.container-boton-fecha button{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: rgb(255, 255, 0);
+    color: #222;
 }
 /*---------------REGIONAL-----------------*/
 .container-fase1{
@@ -431,4 +466,16 @@ footer{
     width: 50px;
     justify-content: end;
     margin-right: 10px;
+}
+.boton-contacto{
+    background-color:  #000;
+    border-radius: 50px;
+    color: rgb(255, 255, 0);
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 10px;
+    padding: 15px 15px;
+}
+.fa-whatsapp{
+    font-size: 25px;
 }
