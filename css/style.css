@@ -74,11 +74,12 @@ button{
 main{
    display: flex;
    justify-content: center;
-   max-width: 1520px;
+   width: 100%;
+   max-width: 1200px;
 }
 /*--------------NOTAS-------------*/
 .container-notas{
-    max-width: 60%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,7 +88,7 @@ main{
 .card{
     background: #e0e0e0;
     width: 350px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 15px;
     height: fit-content;
 }
