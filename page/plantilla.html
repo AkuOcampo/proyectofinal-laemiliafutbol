@@ -1,306 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-        <!-- CSS -->
-        <link rel="stylesheet" href="../css/style.css">
-        <!--ESTILO DE FUENTES-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <title>LaEmilia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--ESTILO DE FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <div class="menu">
+        <!----------BARRA DE NAVEGACIÓN----------->
+        <nav class="navbar">
+            <a class="nav-logo" href="../index.html"><img class="logo" src="../img/LA EMILIA.png" alt=""></a>
+            <ul class="navbar-list">
+                <li class="navbar-items"><a class="navbar-links" href="./local.html">TORNEO LOCAL LNF</a></li>
+                <li class="navbar-items"><a class="navbar-links" href="./regional.html">TORNEO REGIONAL</a></li>
+                <li class="navbar-items"><a class="navbar-links" href="./plantilla.html">PLANTILLA</a></li>  
+            </ul>
+        </nav>
+        <!----------BANNER----------->
+        <img class="banner" src="../img/LBDT.jpg" alt="imagen de la hinchada"> 
+    </div>
+     <div class="container-cards">
+        <div class="swiper" id="mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/1.jpg" alt="Beovidez, Ariel">
+                    <h5>1- Beovidez, Ariel</h5>
+                    <p>ARQUERO</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/2.jpg" alt="Merello, Kerly">
+                    <h5>2- Merello, Kerly </h5>
+                    <p>DEFENSOR</p>
+                </div>
+                <div class="swiper-slide">            
+                    <img class="img-jugadores" src="../img/3.jpg" alt="">
+                    <h5>3- Martinez Cóceres, Enzo</h5>
+                    <p>DEFENSOR</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/4.jpg" alt="">
+                    <h5>4- Mansilla, Franco</h5>
+                    <p>DEFENSOR</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/4.jpg" alt="">
+                    <h5>4- Mansilla, Franco</h5>
+                    <p>DEFENSOR</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/6.jpg" alt="">
+                    <h5>6- Agotegaray, Alejandro</h5>
+                    <p>DEFENSOR</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/7.jpg" alt="">
+                    <h5>7- Nieva, Lautaro</h5>
+                    <p>VOLANTE</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/8.jpg" alt="">
+                    <h5>8- Cardoso, Isabelino</h5>
+                    <p>VOLANTE</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/9.jpg" alt="">
+                    <h5>9- Duarte, Juan</h5>
+                    <p>DELANTERO</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/10.jpg" alt="">
+                    <h5>10- Viñale, Leandro</h5>
+                    <p>DELANTERO</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/11.jpg" alt="">
+                    <h5>11- Barcella, Marcos</h5>
+                    <p>DELANTERO</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-jugadores" src="../img/dt.jpg" alt="">
+                    <h5>Capela, Emiliano</h5>
+                    <p>Director Técnico</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    <div class="flex-container-registro">
+        <div class="info-registro">
+            <h3>¿QUERÉS FORMAR PARTE?</h3>
+            <img class="img-registro" src="../img/LA-EMILIA-1.jpg" alt="equipo La Emilia">
+            <p>Prueba de jugadores. 15,16 y 17 de noviembre desde las 19:00 hs - Estadio Jacinto Gato Lopez</p>
+        </div>
+        <div class="container-info-registro">
+            <form class="formulario"> 
+                <p>Llena el formulario y vení a probarte!</p>  
+                <div>
+                    <input type="text" placeholder="Escriba su nombre" class="input-registro">
+                </div>
+                <div>
+                    <input type="text" placeholder="Escriba su apellido" class="input-registro">
+                </div>
+                <div>
+                    <input type="email" placeholder="Escriba su e-mail" class="input-registro">
+                </div>
+                <div>
+                    <select class="seccion-registro" name="categorias" id="division">
+                        <option class="input-seccion"value="">CATEGORIA</option>
+                        <option class="input-seccion" value="cuarta">SUB 23</option>
+                        <option class="input-seccion" value="quinta">QUINTA</option>
+                        <option class="input-seccion" value="sexta">SEXTA</option>
+                        <option class="input-seccion" value="septima">SÉPTIMA</option>
+                        <option class="input-seccion" value="octava">OCTAVA</option>
+                        <option class="input-seccion" value="novena">NOVENA</option>
+                    </select>
+                </div>
+                <input type="submit" name="Enviar" class="boton-enviar input-registro">
+            </form>
+        </div>
+
+    </div>
+    <!---------FOOTER----------->
+    <footer>
+        <h5 class="footer-h5">&copy Todos los derechos reservado</h5>
+        <div class="redes">
+            <a href="https://www.instagram.com/laemilia0210/" title="instagram icon" ><img src="../img/instagram.png" alt="logo de instagram" class="redes-items"></a>
+            <a href="https://www.facebook.com/ClubSocialyDeportivoLaEmilia/" title="facebook icono"><img src="../img/facebook.png" alt="logo de facebook" class="redes-items"></a>
+            <a href="https://www.twitter.com/laemilia0210/" title="instagram icon"> <img src="../img/TWITTER.png" alt="logo de twitter" class="redes-items"> </a>
+            <a href="https://www.youtube.com/" title="facebook icono"><img src="../img/youtube.png" alt="logo de youtube" class="redes-items"></a>
+        </div>
+    </footer>
     
 
-        <title>LaEmilia</title>
-    </head>
-    <body>
-        <div class="menu">
-            <!----------BARRA DE NAVEGACIÓN----------->
-            <nav class="navbar">
-                <a class="nav-logo" href="../index.html"><img class="logo" src="../img/LA EMILIA.png" alt=""></a>
-                <ul class="navbar-list">
-                    <li class="navbar-items"><a class="navbar-links" href="./local.html">TORNEO LOCAL LNF</a></li>
-                    <li class="navbar-items"><a class="navbar-links" href="./regional.html">TORNEO REGIONAL</a></li>
-                    <li class="navbar-items"><a class="navbar-links" href="./plantilla.html">PLANTILLA</a></li>  
-                </ul>
-            </nav>
-            <!----------BANNER----------->
-            <img class="banner" src="../img/LBDT.jpg" alt="imagen de la hinchada"> 
-        </div>
-
-        <!--------------JUGADORES----------------->
-        <h2>TORNEO REGIONAL AMATEUR</h2>
-        <!-- Swiper -->
-        <div class="container-cards">
-            <div class="swiper mySwiper container-equipo">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/1.jpg" alt="Beovidez, Ariel">
-                        <h5>1- Beovidez, Ariel</h5>
-                        <p>ARQUERO</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/2.jpg" alt="Merello, Kerly">
-                        <h5>2- Merello, Kerly </h5>
-                        <p>DEFENSOR</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">            
-                        <img class="img-jugadores" src="../img/3.jpg" alt="">
-                        <h5>3- Martinez Cóceres, Enzo</h5>
-                        <p>DEFENSOR</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/4.jpg" alt="">
-                        <h5>4- Mansilla, Franco</h5>
-                        <p>DEFENSOR</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/4.jpg" alt="">
-                        <h5>4- Mansilla, Franco</h5>
-                        <p>DEFENSOR</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/6.jpg" alt="">
-                        <h5>6- Agotegaray, Alejandro</h5>
-                        <p>DEFENSOR</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/7.jpg" alt="">
-                        <h5>7- Nieva, Lautaro</h5>
-                        <p>VOLANTE</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/8.jpg" alt="">
-                        <h5>8- Cardoso, Isabelino</h5>
-                        <p>VOLANTE</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/9.jpg" alt="">
-                        <h5>9- Duarte, Juan</h5>
-                        <p>DELANTERO</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/10.jpg" alt="">
-                        <h5>10- Viñale, Leandro</h5>
-                        <p>DELANTERO</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/11.jpg" alt="">
-                        <h5>11- Barcella, Marcos</h5>
-                        <p>DELANTERO</p>
-                    </div>
-                    <div class="swiper-slide img-container-equipo">
-                        <img class="img-jugadores" src="../img/dt.jpg" alt="">
-                        <h5>Capela, Emiliano</h5>
-                        <p>Director Técnico</p>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-        <!-- <div class="container-equipo">
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/1.jpg" alt="Beovidez, Ariel">
-                <h5>1- Beovidez, Ariel</h5>
-                <p>ARQUERO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/2.jpg" alt="Merello, Kerly">
-                <h5>2- Merello, Kerly </h5>
-                <p>DEFENSOR</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/3.jpg" alt="">
-                <h5>3- Martinez Cóceres, Enzo</h5>
-                <p>DEFENSOR</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/4.jpg" alt="">
-                <h5>4- Mansilla, Franco</h5>
-                <p>DEFENSOR</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/5.jpg" alt="">
-                <h5>5- Velo, Agustín</h5>
-                <p>MEDIOCAMPO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/6.jpg" alt="">
-                <h5>6- Agotegaray, Alejandro</h5>
-                <p>DEFENSOR</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/7.jpg" alt="">
-                <h5>7- Nieva, Lautaro</h5>
-                <p>VOLANTE</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/8.jpg" alt="">
-                <h5>8- Cardoso, Isabelino</h5>
-                <p>VOLANTE</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/9.jpg" alt="">
-                <h5>9- Duarte, Juan</h5>
-                <p>DELANTERO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/10.jpg" alt="">
-                <h5>10- Viñale, Leandro</h5>
-                <p>DELANTERO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/11.jpg" alt="">
-                <h5>11- Barcella, Marcos</h5>
-                <p>DELANTERO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/dt.jpg" alt="">
-                <h5>Capela, Emiliano</h5>
-                <p>Director Técnico</p>
-            </div>
-            <div class="container-lista-equipo ">
-                <ul class="lista-equipo"></ol>
-                    <li>Montiel, Martin</li>
-                    <li>Brizuela, Diego</li>
-                    <li>Giovannoni, Alex</li>
-                    <li>Alfeirán, Matias</li>
-                    <li>Carrizo, Ismael</li>
-                    <li>Sarco, Franco</li>
-                    <li>Pittaluga, Jose Maria</li>
-                    <li>DT</li>
-                </ul>
-            </div>
-        </div> -->
-    <!--     <h2>FUTBOL FEMENINO</h2>
-        <div class="container-equipo">
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/1.jpg" alt="Córdoba, María del Carmen">
-                <h5>1- Córdoba, María del Carmen</h5>
-                <p>ARQUERA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/2.jpg" alt="Barbaccia, Delia">
-                <h5>2- Barbaccia, Delia </h5>
-                <p>DEFENSORA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/3.jpg" alt="Machuca, Melania">
-                <h5>3- Machuca, Melania</h5>
-                <p>DEFENSORA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/4.jpg" alt="Mionis, Agustina">
-                <h5>4- Mionis, Agustina</h5>
-                <p>DEFENSORA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/5.jpg" alt="Villalba, Agustina">
-                <h5>5- Villalba, Agustina</h5>
-                <p>MEDIOCAMPO</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/6.jpg" alt="Alegre, Candela">
-                <h5>6- Alegre, Candela</h5>
-                <p>DEFENSORA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/7.jpg" alt="Caro, Julieta">
-                <h5>7- Caro, Julieta</h5>
-                <p>VOLANTE</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/8.jpg" alt="Flores, Sofía">
-                <h5>8- Flores, Sofía</h5>
-                <p>VOLANTE</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/9.jpg" alt="Giménez, Johana">
-                <h5>9- Giménez, Johana</h5>
-                <p>DELANTERA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/10.jpg" alt="Solan, Keila">
-                <h5>10- Solan, Keila</h5>
-                <p>DELANTERA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/11.jpg" alt="Suárez, Lucila">
-                <h5>11- Suárez, Lucila</h5>
-                <p>DELANTERA</p>
-            </div>
-            <div class="img-container-equipo">
-                <img class="img-jugadores" src="../img/dt.jpg" alt="DT: Chanferoni, Daniel">
-                <h5>Chanferoni, Daniel</h5>
-                <p>Director Técnico</p>
-            </div>
-            <div class="container-lista-equipo ">
-                <ul class="lista-equipo"></ol>
-                    <li>Vera, Iara</li>
-                    <li>Ríos, Macarena</li>
-                    <li>Ríos, Valeria</li>
-                    <li>Altamirano, Marilyn</li>
-                    <li>Alonso, Soledad</li>
-                    <li>Alegre, Uma</li>
-                    <li>Gaitan, Romina</li>            
-                    <li>Yancomay, Mariana</li>
-                    <li>Solan, Valentina</li>
-                    <li>Novillo, Mía</li>
-                    <li>Pereyra, Leonela</li>
-                </ul>
-            </div>
-        </div> -->
-        <div class="flex-container-registro">
-            <div class="info-registro">
-                <h3>¿QUERÉS FORMAR PARTE?</h3>
-                <img class="img-registro" src="../img/LA-EMILIA-1.jpg" alt="equipo La Emilia">
-                <p>Prueba de jugadores. 15,16 y 17 de noviembre desde las 19:00 hs - Estadio Jacinto Gato Lopez</p>
-            </div>
-            <div class="container-info-registro">
-                <form class="formulario"> 
-                    <p>Llena el formulario y vení a probarte!</p>  
-                    <div>
-                        <input type="text" placeholder="Escriba su nombre" class="input-registro">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Escriba su apellido" class="input-registro">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Escriba su e-mail" class="input-registro">
-                    </div>
-                    <div>
-                        <select class="seccion-registro" name="categorias" id="division">
-                            <option class="input-seccion"value="">CATEGORIA</option>
-                            <option class="input-seccion" value="cuarta">SUB 23</option>
-                            <option class="input-seccion" value="quinta">QUINTA</option>
-                            <option class="input-seccion" value="sexta">SEXTA</option>
-                            <option class="input-seccion" value="septima">SÉPTIMA</option>
-                            <option class="input-seccion" value="octava">OCTAVA</option>
-                            <option class="input-seccion" value="novena">NOVENA</option>
-                        </select>
-                    </div>
-                    <input type="submit" name="Enviar" class="boton-enviar input-registro">
-                </form>
-            </div>
-
-        </div>
-        <!---------FOOTER----------->
-        <footer>
-            <h5 class="footer-h5">&copy Todos los derechos reservado</h5>
-            <div class="redes">
-                <a href="https://www.instagram.com/laemilia0210/" title="instagram icon" ><img src="../img/instagram.png" alt="logo de instagram" class="redes-items"></a>
-                <a href="https://www.facebook.com/ClubSocialyDeportivoLaEmilia/" title="facebook icono"><img src="../img/facebook.png" alt="logo de facebook" class="redes-items"></a>
-                <a href="https://www.twitter.com/laemilia0210/" title="instagram icon"> <img src="../img/TWITTER.png" alt="logo de twitter" class="redes-items"> </a>
-                <a href="https://www.youtube.com/" title="facebook icono"><img src="../img/youtube.png" alt="logo de youtube" class="redes-items"></a>
-            </div>
-        </footer>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <!------------JAVASCRIPT------------->
-        <script src="../js/script.js"></script>
-    </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

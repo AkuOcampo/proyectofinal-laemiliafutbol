@@ -20,7 +20,7 @@ document.querySelector(".boton-fecha2").addEventListener("click", () => {
     div.classList.remove("div_hide");
 }); */
 
-let swiper = new mySwiper('.swiper-container', {
+let swiper = new mySwiper('.mySwiper', {
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev'
