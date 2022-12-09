@@ -256,15 +256,9 @@ main .container-notas{
 }
 .pop-up-formacion{
     background-color: #444;
-    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
     padding-left: 40px;
     margin-right: 10px;
-/*     opacity: 0;
-    visibility: hidden; */
-}
-.c-img:hover > .pop-up-formacion{
-    opacity: 1;
-    visibility: visible;
 }
 /*-------------ASIDE--------------*/
 .aside-conteiner{
@@ -587,24 +581,26 @@ footer{
     justify-content: end;
     margin-right: 10px;
 }
-.boton-contacto{
-    background-color:  #000;
+.boton-whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
     border-radius: 75px;
     color: rgb(255, 255, 0);
     text-align: center;
     cursor: pointer;
-    margin: 10px 10px;
-    padding: 20px 20px;
-}
-.boton-contacto:hover{
-    background-color:  #000;
-    border-radius: 75px;
-    color: rgb(255, 255, 0);
-    text-align: center;
-    cursor: pointer;
-    margin: 10px 10px;
-    padding: 15px 30px;
+    margin: 10px;
+    padding: 15px;
+    position: absolute;
 }
 .fa-whatsapp{
     font-size: 25px;
+    transition: all 0.5s;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+}
+.a-whatsapp{
+    color: rgb(255, 255, 0);
 }
