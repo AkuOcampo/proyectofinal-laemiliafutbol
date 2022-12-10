@@ -30,6 +30,7 @@ button{
     position: relative;
     display: flex;
     justify-content: center;
+    width: 100vw;
 }
 .banner{
     width: 100vw;
@@ -40,7 +41,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 150px;
     background-image:url(https://media.istockphoto.com/id/1191154632/photo/black-gold-background-gradient-texture-soft-golden-with-light-technology-diagonal-gray-and.jpg?b=1&s=170667a&w=0&k=20&c=k_4uP2TAZES7MVEJPUcD9KUVSuv87oYOGUgbLS5PynM=);
     background-color: rgba(16 ,16 ,16 , 0.1);
@@ -332,12 +333,13 @@ main .container-notas{
 }
 .tabla{
     display: flex;
-    width: 100vw;
+    width: 1000px;
+    height: auto;
     justify-content: center;
-    margin: 80px 0;
+    margin: 80px auto;
 }
 .tabla_posiciones{
-    width:80vw;
+    width: 100%;
 }
 .container-fecha{
     width: 500px;
@@ -394,6 +396,9 @@ main .container-notas{
     background-color: rgb(255, 255, 0);
     color: #222;
 }
+.item-lista-fecha{
+    font-size: 16px;
+}
 /*---------------REGIONAL-----------------*/
 .container-fase1{
     margin: 50px 25px;
@@ -441,32 +446,39 @@ th{
     width: 25px;
 }
 /*-------------------------------PLANTILLA--------------*/
-.container-equipo{
-    padding: 25px;
-    margin: 10px;
+.container-flexwrap-cards{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
 }
-.img-container-equipo{
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    max-width: 1520px;
+    flex-wrap: wrap;
+}
+.cards-jugadores{
     margin: 10px;
     padding: 15px;
-    width: auto;
+    width: 300px;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #555;
     transition: all 0.3s;
 }
+.cards-jugadores:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 0, 0.6);
+}
 .img-jugadores{
     width:250px;
-}
-.container-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1520px;
 }
 .flex-container-registro{
     display: flex;
     align-items: center;
     justify-content: center;
-/*     flex-wrap: wrap;  */
     width: 80%;
     margin: 75px auto;
     background-color: #555;
@@ -545,9 +557,8 @@ footer{
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    width: 100%;
-    max-width: 1520px;
-    background-color:  rgb(255, 255, 0);
+    width: 100vw;
+    background-color: rgb(255, 255, 0);
 }
 .footer-h5{
     margin: 0 auto;

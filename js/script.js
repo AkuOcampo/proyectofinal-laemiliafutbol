@@ -2,8 +2,7 @@
 if (edad==false) {
 	alert("Entras bajo tu responsabilidad")
 }; */
-//----------------------POP UP NOTAS----------------------------------
-let abrir1= document.getElementById('abrir-popup1');
+//----------------------POP UP NOTAS-----------------------
 let cerrar1= document.getElementById('cerrar-popup1');
 let popup1= document.getElementById('popup1');
 
@@ -44,3 +43,4 @@ let div = document.querySelector(".fecha2");
 document.querySelector(".boton-fecha2").addEventListener("click", () => {
     div.classList.add(".div-fecha2");
 });
+//------------------FECHAS-----------------------------
