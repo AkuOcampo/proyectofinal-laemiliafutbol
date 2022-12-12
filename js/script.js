@@ -3,6 +3,7 @@ if (edad==false) {
 	alert("Entras bajo tu responsabilidad")
 }; */
 //----------------------POP UP NOTAS-----------------------
+let abrir1= document.getElementById('abrir-popup1');
 let cerrar1= document.getElementById('cerrar-popup1');
 let popup1= document.getElementById('popup1');
 
