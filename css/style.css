@@ -28,6 +28,7 @@ h3{
 }
 button{
     cursor: pointer;
+    border: none;
 }
 /*-----------MODIFICANDO EL MENU---------*/
 .menu{
@@ -59,6 +60,22 @@ button{
     font-size: 50px;
     text-align: center;
     font-weight: 700;
+}
+#span-h3{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid #222;
+    width: 32ch;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(32) ,
+        blink .5s infinite, step-end alternate;
+}
+@keyframes typing{
+    from {width: 0 }
+}
+@keyframes blink{
+    50% {border-color:transparent}
 }
 /*-----------MODIFICANDO LA BARRA DE NAVEGACIÓN---------*/
 .navbar{
@@ -111,6 +128,14 @@ main{
    width: 100%;
    max-width: 1200px;
    background-color: rgba(16, 16, 16, 0.9);
+   padding: 15px 10px;
+}
+section{
+    width: 78%;
+    padding: 0px 15px;
+}
+aside{
+    width: 20%;
 }
 /*--------------NOTAS-------------*/
 .container-notas{
@@ -121,16 +146,16 @@ main{
 }
 .container-notas .container-cards-notas{
     display: flex;
-    justify-content: space-between;
-    width: 900px;
+    justify-content: space-around;
+    width: 875px;
 }
 .card{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     background: #e0e0e0;
     width: 250px;
-    margin: 10px 5px;
+    margin: 5px 5px;
     border-radius: 15px;
     height: 400px;
 }
@@ -146,8 +171,7 @@ main{
     border-radius: 8px;
     color: rgb(255, 255, 0);
     text-align: center;
-    margin: 0px 20px;
-    justify-self: end;
+    margin: 10px 20px;
 }
 .card-image{
     background-color: #222;
@@ -161,10 +185,17 @@ main{
     border-radius: 15px 15px 0 0;
     align-items: flex-start;
 }
-.card p, h3{
+.card p{
     font-size: 12px;
     color: #222;
-    padding: 5px;
+    padding: 0 5px;
+}
+.card h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    color: #222;
+    text-align: center;
 }
 /*---------POPUP---------------*/
 .pop-up{
@@ -191,10 +222,10 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #e0e0e0;
-    width: 100%;
+    width: 80%;
     height: fit-content;
     padding: 30px 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(255, 255, 0, 0.6);
     margin: 70px auto;
 }
 .nota img{
@@ -290,6 +321,10 @@ main{
     justify-content: center;
     flex-direction: column;
 }
+.partido-item{
+    padding: 2px;
+    margin: 0;
+}
 .partido-aside{
     display: flex;
     flex-direction: column;
@@ -297,6 +332,17 @@ main{
     font-size: 12px;
     box-shadow: 0px 2px 5px #444;
     margin: 15px 0;
+}
+.partido-aside button{
+    background-color: transparent;
+    text-align: end;
+    padding-right: 2px;
+    border-bottom: 2px solid rgb(255, 255, 0);
+}
+.partido-aside button a{
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 0);
 }
 .torneo-partido{
     font-weight: 700;
@@ -661,6 +707,9 @@ footer{
 }
 .fa-whatsapp:hover{
     transform: scale(1.2);
+}
+.fa-solid:link{
+    color: rgb(255, 255, 0);
 }
 .a-whatsapp{
     color: rgb(255, 255, 0);
