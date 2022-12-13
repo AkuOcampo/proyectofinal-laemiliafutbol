@@ -44,4 +44,11 @@ let div = document.querySelector(".fecha2");
 document.querySelector(".boton-fecha2").addEventListener("click", () => {
     div.classList.add(".div-fecha2");
 });
-//------------------FECHAS-----------------------------
+//------------------whatsapp-----------------------------
+let salida= document.getElementById('boton-regional');
+
+salida.addEventListener("click", ()=>{
+    if(confirm("Estas por salir de la página, estas seguro?")){
+       open('https://torneoregionalfed.wixsite.com/torneoramateur', "Gracias por su visita");
+    };
+});
