@@ -662,6 +662,11 @@ th{
 .logo-fase{
     width: 25px;
 }
+.div-fiture .boton-enviar{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 0);
+    color: #222;
+}
 /*----------PLANTILLA--------*/
 .container-flexwrap-cards{
     display: flex;

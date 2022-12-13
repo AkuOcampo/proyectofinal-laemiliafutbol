@@ -1,8 +1,4 @@
-/* let edad=confirm("Eres mayor de 18?");
-if (edad==false) {
-	alert("Entras bajo tu responsabilidad")
-}; */
-//----------------------POP UP NOTAS-----------------------
+//----------------------POP UP NOTAS-----------------------//
 let abrir1= document.getElementById('abrir-popup1');
 let cerrar1= document.getElementById('cerrar-popup1');
 let popup1= document.getElementById('popup1');
@@ -39,17 +35,3 @@ cerrar3.addEventListener("click", ()=>{
     popup3.classList.remove('mostrar');
 });
 
-let div = document.querySelector(".fecha2");
-
-document.querySelector(".boton-fecha2").addEventListener("click", () => {
-    div.classList.add(".div-fecha2");
-});
-//------------------link externo-----------------------------
-let salida= document.querySelector(".boton-regional");
-
-salida.addEventListener("click", ()=>{
-    let decision= confirm("Estas por salir de la página, estas seguro?");
-    if(decision==true){
-       location.href = 'https://torneoregionalfed.wixsite.com/torneoramateur'
-    };
-});
