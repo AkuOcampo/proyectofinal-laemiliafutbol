@@ -34,13 +34,14 @@ button{
 .menu{
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
+
 }
 .banner{
-    width: 100vw;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -51,8 +52,8 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 0, 0.8);
 }
 .frase h3{
@@ -279,26 +280,62 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    max-width: 1200px;
+    width: 1200px;
+    height: 500px;
 }
-.container-formacion{
-    width: 50%;
-}
-.c-img{
-    cursor: pointer;
-    margin-left: 10px;
-}
-.container-posiciones .container-formacion img{
+.formacion{
+    position: absolute;
     width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .5s;
 }
-.container-posiciones .container-formacion h4, li{
-    font-size: 26px;
-    padding: 5px;
+.container-posiciones .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 1px 1px 5px #888;
 }
-.pop-up-formacion{
-    background-color: #444;
-    border-radius: 0px 8px 8px 0px;
-    padding-left: 40px;
-    margin-right: 10px;
+.container-posiciones .front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.container-posiciones .back{
+    transform: perspective(600px) rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/cancha\ de\ futbol.jpg);
+    background-size: cover;
+}
+.container-posiciones .back div{
+    background-color: rgba(255, 255, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-posiciones .back ol li{
+    color:#222 ;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 0 30px ;
+    background-color: rgb(255, 255, 0) ;
+
+}
+.container-posiciones:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.container-posiciones:hover .back{
+    transform: perspective(600px) rotateY(360deg);
 }
 .slide{
     width: 100%;
@@ -410,15 +447,84 @@ aside{
 .tabla_posiciones{
     width: 100%;
 }
+/*FECHAS*/
 .fechas{
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 20px;
-    height: fit-content;
-    flex-wrap: wrap;
+    padding: 15px;
+    position: relative;
 }
-.container-boton-fecha{
+.slider-fecha , .menu-fechas , .slider-li, .li-items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.slider-li{
+    display: block;
+}
+ul.slider-fecha{
+/*   position: relative; */
+  height: 150px;
+}
+ul .slider-fecha li{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+.li-items{
+    position: absolute;
+}
+.fecha-partido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    width: inherit;
+}
+ul .slider-fecha li .fecha-partido img{
+    width: 25%;
+}
+ul .slider-fecha li .fecha-partido p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+/*----------SLIDER------------*/
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu-fechas{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu-fechas li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu-fechas li a{
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  background-color:rgb(255, 255, 0);
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+/* .container-boton-fecha{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -433,12 +539,12 @@ aside{
     background-color: rgb(255, 255, 0);
     color: #222;
     width: fit-content;
-}
-.container-fecha{
+} */
+/* .container-fecha{
     width: 100%;
     height: 30%;
-}
-.fecha1{
+} */
+/* .fecha1{
     margin: 15px auto;
     padding: 25px 0;
     background-color: rgba(49, 49, 49, 0.4);
@@ -460,12 +566,14 @@ aside{
     pointer-events: auto;
     opacity: 1;
     z-index: 11; 
-}
-.fecha-partido{
+} */
+/* .fecha-partido{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    margin: auto;
+    background-color: rgb(49, 49, 49);
+} */
 .fecha-partido img{
     width: 25%;
 }
@@ -474,13 +582,16 @@ aside{
     font-weight: 500;
     margin: 0 20px;
 }
-.container-lista{
+/* .container-lista{
     display: flex;
     justify-content: space-around;
 }
+.lista-fecha{
+    justify-content: end;
+}
 .item-lista-fecha{
     font-size: 12px;
-}
+} */
 /*---------------REGIONAL-----------------*/
 .container-fase1{
     margin: 50px 25px;
@@ -542,15 +653,16 @@ th{
     display: flex;
     padding: 20px;
     width: 100%;
-    height: fit-content;
     flex-wrap: wrap;
+    max-width: 1520px;
 }
 .container-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 10px;
-    max-width: 1520px;
+    max-width: 1200px;
     flex-wrap: wrap;
+    width: 100%;
 }
 .cards-jugadores{
     margin: 10px;
@@ -566,15 +678,15 @@ th{
 }
 .img-jugadores{
     width:100%;
+    object-fit: cover;
 }
 .flex-container-registro{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    max-width: 1520px;
+    max-width: 1200px;
     width: 80%;
-    height: fit-content;
     margin: 75px auto;
     box-shadow: 0px 0px 4px #888;
     background-image: url("https://scontent.fros11-1.fna.fbcdn.net/v/t39.30808-6/315459318_1002156370732809_5724236395173874368_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=oeIXUMJ_Qn4AX_ay4sB&_nc_ht=scontent.fros11-1.fna&oh=00_AfBGVVXweIrOvxqyEX63AweNwCr_ikxTWd-kVglt9pnjfA&oe=639B1671");
@@ -708,9 +820,9 @@ footer{
 .fa-whatsapp:hover{
     transform: scale(1.2);
 }
-.fa-solid:link{
+.a-whatsapp{
     color: rgb(255, 255, 0);
 }
-.a-whatsapp{
+.a-whatsapp:link{
     color: rgb(255, 255, 0);
 }
